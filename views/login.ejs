@@ -1,0 +1,56 @@
+
+<%- include("partials/header"); -%>
+
+        <div class="container login-container">
+             <div class="row">
+               <div class="col-md-6 ads">
+                 <h1><span id="fl">LAY DEE KISS</span><span id="sl"> COLLECTION</span></h1>
+               </div>
+               <div class="col-md-6 login-form">
+                 <div class="profile-img">
+                   <img src="images/logo.jpg" alt="profile_img" height="140px" width="140px;">
+                 </div>
+                 <h3>Login</h3>
+                 <form  class="" action="/login" method="POST">
+                   <div class="form-group">
+                     <input type="text" class="form-control" name="username" placeholder="Email">
+                   </div>
+                   <div class="form-group">
+                     <input type="password" class="form-control" name="password" placeholder="Password">
+                   </div>
+                   <div class="hey" class="form-group">
+                               <label><input  type="checkbox" value=""/> Remember me</label>
+           </div>
+
+                   <div class="form-group">
+                     <button type="submit"  class="btn btn-primary btn-lg btn-block">Sign In</button>
+                   </div>
+                   <div class="form-group forget-password">
+                       <a class="btn btn-primary btn-lg btn-block" href="/forget">Forget Password</a>
+                   </div>
+                   <div class="form-group">
+                               <p class="hey">Don't have an Account! </p>
+                    <p class="btn btn-primary btn-lg btn-block"><a href="/register">Create an Account</a></p>
+</div>
+                                    </form>
+                                     <p class="hey">OR</p>
+                                    <div class="form-group">
+              <a  class="btn btn-primary btn-lg btn-block" class="btn btn-block btn-social btn-facebook" href="/auth/facebook" role="button">
+                                              <i class="fab fa-facebook"></i>
+                                                   Sign Up with Facebook
+                                            </a>
+                                    </div>
+                                    <div class="form-group">
+      <a class="btn btn-primary btn-lg btn-block" class="btn btn-block btn-social btn-google" href="/auth/google" role="button">
+                                                <i class="fab fa-google"></i>
+                                                Sign Up with Google
+                                              </a>
+                                            </div>
+
+               </div>
+             </div>
+           </div>
+
+
+
+<%- include("partials/footer"); -%>

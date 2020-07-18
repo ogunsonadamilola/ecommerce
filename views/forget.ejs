@@ -1,0 +1,38 @@
+<%- include("partials/header"); -%>
+<div class="container login-container">
+     <div class="row">
+       <div class="col-md-6 ads">
+         <h1><span id="fl">LAY DEE KISS</span><span id="sl"> COLLECTION</span></h1>
+       </div>
+       <div class="col-md-6 login-form">
+         <div class="profile-img">
+           <img src="images/logo.jpg" alt="profile_img" height="140px" width="140px;">
+         </div>
+         <h3>Forget Password</h3>
+         <form  class="" action="/forget" method="POST">
+
+             <p class="hey">Enter your email address and your password will be reset and sent to your email.</p>
+           <div class="form-group">
+             <input type="text" class="form-control" name="username" placeholder="Enter your Email">
+           </div>
+                     <div class="hey" class="form-group">
+                       <label><input  type="checkbox" value=""/> Remember me</label>
+   </div>
+
+           <div class="form-group">
+             <button type="button" type="submit"  class="btn btn-primary btn-lg btn-block">Send New Password</button>
+           </div>
+           <div class="form-group">
+<a href="/login"><button type="button" type="submit"  class="btn btn-primary btn-lg btn-block">Login</button>
+</a>
+                       </div>
+
+                            </form>
+
+       </div>
+     </div>
+   </div>
+
+
+
+<%- include("partials/footer"); -%>
